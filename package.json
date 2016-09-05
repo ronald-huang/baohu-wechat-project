@@ -1,0 +1,15 @@
+{
+  "name": "baohu",
+  "version": "1.0.0",
+  "description": "保乎微信版",
+  "main": "index.html",
+  "author": "ronald",
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "grunt-contrib-less": "^1.3.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}

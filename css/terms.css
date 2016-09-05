@@ -1,0 +1,191 @@
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+body{
+	font-family: "微软雅黑";
+	font-size: 16px;
+	background: #eef2f5;
+}
+/*cell*/
+.maigit_cells {
+    border-bottom: 1px solid #ccc;
+    background-color: #ffffff;
+    line-height: 1.45;
+    font-size: 16px;
+    overflow: hidden;
+    position: relative;
+    margin:0 0px;
+    display: block;
+    padding: 0px 0;
+    z-index: 9;
+    cursor: pointer;
+}
+.maigit_cells:before{
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid #ccc;
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+          transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+      -ms-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+}
+.maigit_cell{
+    padding: 10px 12px;
+    display: block;
+    position: relative;
+    text-decoration: none;
+}
+
+.maigit_cell:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid #ccc;
+    -webkit-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+          transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+      -ms-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+}
+.maigit_cell:first-child:before{
+    display: none;
+}
+.maigit_cell p{
+    color:#444444;
+        margin-left: 6px;
+}
+
+.marT20{
+    margin-top: 20px;
+}
+.maigit_cell_primary {
+    width: 2000px;
+    white-space: normal;
+}
+
+.maigit_cell_ft {
+    text-align: right;
+    color: #bbb;
+    font-size: 14px;
+    span{
+        color: #c42347;
+    }
+}
+
+.maigit_cell_hd, .maigit_cell_bd, .maigit_cell_ft {
+    display: table-cell;
+    vertical-align: middle;
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: nowrap;
+}
+.maigit_cell_hd span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+ #capital{
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    left: 0px;
+    width: 18px;
+    height: 20px;
+    background: url(../images/center-icon.png) 0px 0px no-repeat;
+    background-size: cover;
+}
+#assets{
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    left: 0px;
+    width: 18px;
+    height: 20px;
+    background: url(../images/center-icon.png) 0px -25px no-repeat;
+    background-size: cover; 
+}
+
+#coupon{
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    left: 0px;
+    width: 18px;
+    height: 20px;
+    background: url(../images/center-icon.png) 0px -51px no-repeat;
+    background-size: cover; 
+}
+#invite{
+        display: inline-block;
+    position: relative;
+    top: 3px;
+    left: 0px;
+    width: 18px;
+    height: 18px;
+    background: url(../images/center-icon.png) 0px -76px no-repeat;
+    background-size: cover;
+}
+#setting{
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    left: 0px;
+    width: 18px;
+    height: 20px;
+    background: url(../images/center-icon.png) 0px -99px no-repeat;
+    background-size: cover;
+}
+
+
+
+
+.maigit_cell_hd .maigit_label {
+  display: block;
+  width: 3em;
+}
+
+
+.maigit_cells_form .maigit_cell_hd{
+     padding-right: 1em;
+}
+
+
+.maigit_cells_access .maigit_cell_ft:after {
+  content: " ";
+  display: inline-block;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  height: 6px;
+  width: 6px;
+  border-width: 1px 1px 0 0;
+  border-color: #959595;
+  border-style: solid;
+  position: relative;
+  top: -2px;
+}
+
+.inner{
+    padding: 20px;
+    font-size: 14px;
+}
+.title{
+    color:#333;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0px;
+}

@@ -1,0 +1,166 @@
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+body{
+	font-family: "微软雅黑";
+	font-size: 16px;
+	background: #eef2f5;
+}
+.centerTop{
+    background: #fff;
+    padding: 20px;
+    border-bottom: 1px #ddd solid;
+}
+.centerTop p{
+    line-height: 25px;
+}
+.content{
+    padding: 20px;
+}
+.tips{
+    color:#999;
+    margin-bottom: 10px;
+}
+ul{
+    width: 100%;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: box;
+    box-sizing:content-box;
+}
+ul li{
+    width: 32%;
+    margin: 0px;
+}
+ul li div{
+    border:1px #333 solid;
+    margin: 5px;
+    border-radius: 10px;
+    position: relative;
+    margin: 20px auto;
+}
+ul li div:after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #555;
+    opacity: 0.6;
+    content: "范例";
+    border-radius: 10px;
+    color:#fff;
+    text-align: center;
+    line-height: 80px;
+    left: 0px;
+}
+ul li div.blue{
+    border:1px #0e6eb8 solid!important;
+    color:#0e6eb8;
+    height: 80px;
+    line-height: 70px;
+    text-align: center;
+    width: 100%;
+    width: 130px;
+}
+ul li div.blue:after{
+    background: none;
+    content: "";
+}
+ul li div.blue span{
+    font-size: 20px;
+}
+ul li div.blue span:before{
+    content: "+";
+    font-size: 30px;
+    position: relative;
+    left: 0px;
+    top: 2px;
+}
+ul li div.in{
+    background: url(../images/idcard.png) top left no-repeat;
+    height: 80px;
+    background-size: cover;
+    width: 130px;
+        margin: 20px auto;
+}
+ul li div.out{
+    background: url(../images/idcard1.png) top left no-repeat;
+    height: 80px;
+    background-size: cover;
+    width: 130px;
+        margin: 20px auto;
+}
+.btn{
+    width: 70%;
+    margin: 20px 15% 10px;
+    display: inline-block;
+    background: #0e6eb8;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color:#fff;
+    text-decoration: none;
+    border-radius: 6px;
+}
+.bottom{
+    text-align: center;
+    display: block;
+    margin: 0px 0px;
+    color:#999999;
+    font-size: 14px;
+}
+@media(min-width: 320px) and (max-width: 480px){
+    ul li div.in{
+        background: url(../images/idcard.png) top left no-repeat;
+        height: 52px;
+        background-size: cover;
+        width: 80px;
+            margin: 20px auto;
+    }
+    ul li div.out{
+        background: url(../images/idcard1.png) top left no-repeat;
+        height: 52px;
+        background-size: cover;
+        width: 80px;
+            margin: 20px auto;
+    }
+    ul li div.blue{
+        height: 52px;
+        background-size: cover;
+        width: 80px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+    ul li div:after{
+        line-height: 60px;
+    }
+}
+@media(min-width: 480px) and (max-width: 960px){
+    ul li div.in{
+        background: url(../images/idcard.png) top left no-repeat;
+        height: 100px;
+        background-size: cover;
+        width: 160px;
+            margin: 20px auto;
+    }
+    ul li div.out{
+        background: url(../images/idcard1.png) top left no-repeat;
+        height: 100px;
+        background-size: cover;
+        width: 160px;
+            margin: 20px auto;
+    }
+    ul li div.blue{
+        height: 100px;
+        background-size: cover;
+      width: 160px;
+        line-height: 90px;
+    }
+    ul li div:after{
+        line-height: 90px;
+    }
+}

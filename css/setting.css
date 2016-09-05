@@ -1,0 +1,81 @@
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+input[type="button"],input[type="submit"],input[type="reset"] {
+    -webkit-appearance: none;
+}
+textarea {  -webkit-appearance: none;}   
+.button{ border-radius: 0; } 
+body{
+	font-family: "微软雅黑";
+	font-size: 16px;
+	background: #eef2f5;
+}
+.form-group>label[class*=col-] {
+    margin-bottom: 4px;
+}
+.form-group{
+    margin-bottom: 20px;
+}
+.form-group label {
+    font-size: 14px;
+    color: #231814;
+    width: 100%;
+    margin-bottom: 5px;
+    display: block;
+    text-indent: 5px;
+}
+.form-group input{
+    padding: 12px 0px;
+    border-radius:6px;
+    border:1px #ddd solid;
+    text-indent: 10px;
+    outline: none;
+}
+.col-xs-12 {
+    width: 100%;
+}
+.width-100 {
+    width: 100%!important;
+}
+.inner{
+    margin: 30px;
+}
+.btn{
+        display: block;
+    width: 100%;
+    background: #0e6eb8!important;
+    border-color: #3385ff;
+    height: 40px;
+    font-size: 18px!important;
+    color: #fff!important;
+    line-height: 40px;
+        margin-top: 15px;
+        text-align: center;
+        outline: none;
+        border:none;
+        border-radius: 6px;
+}
+.help-block{
+    position: relative;
+    top:3px;
+    left: 0px;
+    font-size: 14px;
+    color:#e7122c;
+    text-indent: 5px;
+}
+.red input{
+    color:#e7122c;
+}
+
+.date input{
+    display: table-cell;
+    width: 23%;
+}
+.date span{
+    color:#999;
+}

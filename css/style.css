@@ -1,0 +1,566 @@
+
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/* start editing from here */
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{	vertical-align:top;}/* vertical align top */
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+/*end reset*/
+/****-----start-body----****/
+body{
+	background:#eef2f5;
+  font-family: "微软雅黑";
+
+}
+body a,form li,.submit input[type="submit"],.new p a,.new p.sign{
+	transition: 0.1s all;
+	-webkit-transition: 0.1s all;
+	-moz-transition: 0.1s all;
+	-o-transition: 0.1s all;
+}
+body h1 {
+  color:#fff;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 2.9em;
+}
+.app-cam h2{
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 1.6em;
+  font-weight: 300;
+}
+.app-cam{
+  width:28%;
+  margin:0 auto;
+  text-align: center;
+  padding:4em;
+  height: 80%;
+}
+.cam {
+  padding: 1em 0;
+}
+form {
+   padding: 0% 1%;
+}
+/*-----*/
+.cam img {
+  margin: 1em 0;
+  width: 30%;
+}
+.app-cam input[type="text"]{
+  width: 81.2%;
+  padding: 1em 1em 1em 1em;
+  color: #283440;
+  font-size: 16px;
+  outline: none;
+  font-weight: 500;
+  border: none;
+  border-bottom:1px solid #C0C3C8;
+  font-family:"微软雅黑";
+   border-top-left-radius:0.3em;
+   -o-border-top-left-radius:0.3em;
+   -moz-border-top-left-radius:0.3em;
+   -webkit-border-top-right-radius:0.3em;
+    border-top-right-radius:0.3em;
+   -o-border-top-right-radius:0.3em;
+   -moz-border-top-right-radius:0.3em;
+   -webkit-border-top-right-radius:0.3em;
+  }
+.app-cam input[type="password"]{
+  width: 81.2%;
+  padding: 1em 1em 1em 1em;
+  color: #283440;
+  font-size: 16px;
+  outline: none;
+  font-weight: 500;
+  border: none;
+  font-family:"微软雅黑";
+  border: none;
+   border-bottom-left-radius:0.3em;
+   -o-border-bottom-left-radius:0.3em;
+   -moz-border-bottom-left-radius:0.3em;
+   -webkit-border-bottom-right-radius:0.3em;
+    border-bottom-right-radius:0.3em;
+   -o-border-bottom-right-radius:0.3em;
+   -moz-border-bottom-right-radius:0.3em;
+   -webkit-border-bottom-right-radius:0.3em;
+  }
+.borderBottom{
+  border-bottom:1px solid #C0C3C8!important;
+}
+.inline{
+  position: relative;
+}
+.getCode{
+  position: absolute;
+    right: 40px;
+    top: 16px;
+    color: #333333;
+    padding-left: 10px;
+    border-left: 1px #ddd solid;
+    font-size: 14px;
+}
+  .submit {
+  margin: 1em 0;
+  }
+.app-cam input[type="submit"]{
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  padding: 17px 15px;
+  width:83%;
+  height: 50px;
+  border:none;
+  background: #0e6eb8;
+  border-radius: 0.3em;
+  outline: none;
+  -o-border-radius: 0.3em;
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+}
+
+
+
+.new {
+  width: 150px;
+    position: relative;
+    left: 50%;
+    margin-left: -68px!important;
+}
+.new p{
+  float:left;
+}
+.new p a,.new p.sign{
+  color:#666666;
+  font-weight: 400;
+  font-size: 1em;
+}
+.new p a:hover,.new p.sign a:hover{
+  text-decoration: underline;
+}
+.new p.wechat{
+  float:left;
+  position: relative;
+}
+.new p.wechat a:before{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  content: "";
+  width: 32px;
+  height: 26px;
+  background: url(../images/wechat.png) no-repeat;
+  background-size: contain;
+}
+
+.new p.wechat a:after{
+      position: absolute;
+    left: 75px;
+    top: 6px;
+    content: "";
+    width: 1px;
+    height: 12px;
+    background: #c5c6c7;
+    background-size: contain;
+}
+
+.new p.sign{
+  float:right;
+}
+/*---------------*/
+.copy-right {
+  position: relative;
+  bottom: 20px;
+  text-align: center;
+ /* left: 50%;
+  margin-left: -77px;*/
+
+}
+.copy-right p {
+	color: #bbbbbb;
+	font-size: 1em;
+	font-weight:400;
+  margin: 0 auto;
+  text-align: center;
+}
+.copy-right p a {
+	  color: #666;
+}
+.copy-right p a:hover {
+	text-decoration: underline;
+}
+
+.tip{
+  height: 35px;
+  background: #e7122c;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  line-height: 35px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+/*-----start-responsive-design------*/
+@media (max-width:1440px){
+  .app-cam{
+    width:30%;
+  }
+  .app-cam input[type="text"],.app-cam input[type="password"]{
+    width: 80.2%;
+  	
+  }
+}
+@media (max-width:1366px){
+  .app-cam{
+    width: 30%;
+  }
+.app-cam input[type="text"], .app-cam input[type="password"] {
+    width: 79.7%;
+  }
+body h1 {
+  font-size: 2.6em;
+}
+  	
+}
+@media (max-width:1280px){
+  .app-cam {
+  width: 35%;
+  }
+  .app-cam input[type="text"], .app-cam input[type="password"] {
+  width: 80.7%;
+  }
+  
+}
+@media (max-width:1024px){
+  .app-cam {
+  width: 47%;
+  }
+  .app-cam input[type="text"], .app-cam input[type="password"] {
+  width: 82.7%;
+  }
+
+  .new p.wechat a:before{
+    position: absolute;
+    left: -21px;
+    top: 2px;
+    content: "";
+    width: 18px;
+    height: 19px;
+    background: url(../images/wechat.png) no-repeat;
+    background-size: contain;
+  }
+ 
+}
+@media (max-width:768px){
+  body h1 {
+  font-size: 2.4em;
+  }
+  .cam img {
+  margin: 0em 0 1em;
+      width: 30%;
+}
+.app-cam h2 {
+  padding: 0.8em 0;
+  font-size: 1.6em;
+}
+.app-cam {
+  width: 54%;
+  margin: 0 auto 0 15%;
+}
+.copy-right {
+  padding: 1em 1em;
+}
+.app-cam input[type="text"], .app-cam input[type="password"] {
+  width:79.7%;
+  }
+ 
+}
+@media (max-width:640px){
+  body h1 {
+  font-size: 2.1em;
+}
+.app-cam input[type="text"], .app-cam input[type="password"] {
+    width: 79.8%;
+}
+.app-cam {
+  width: 65%;
+  margin: 0 auto 0 7%;
+}
+.new {
+  margin: 2em 0 1em 0;
+}
+ .new p.wechat a:before{
+    position: absolute;
+    left: -21px;
+    top: 4px;
+    content: "";
+    width: 18px;
+    height: 19px;
+    background: url(../images/wechat.png) no-repeat;
+    background-size: contain;
+  }
+}
+@media (max-width:480px){
+  .app-cam {
+  width: 90%;
+  padding: 2em 1em 1em 1em;
+  }
+  .copy-right p {
+    font-size: 0.9em;
+  }
+  .new p.sign,.new p.wechat {
+  font-size: 0.9em;
+  }
+  .new p a {
+      font-size: 0.97em;
+
+  }
+
+  .new p.wechat a:before{
+    position: absolute;
+    left: -21px;
+    top: 2px;
+    content: "";
+    width: 18px;
+    height: 19px;
+    background: url(../images/wechat.png) no-repeat;
+    background-size: contain;
+  }
+  form {
+  width: 100%;
+  margin: 0 auto;
+  }
+  .app-cam {
+  width: 80%;
+  }
+  .app-cam input[type="text"], .app-cam input[type="password"] {
+  width: 72.8%;
+  }
+  
+  .buttons {
+  margin: 4em 0 1em 0;
+}
+.cam img {
+  width: 25%;
+}
+
+ .new p.wechat a:before{
+    position: absolute;
+    left: -21px;
+    top: 2px;
+    content: "";
+    width: 18px;
+    height: 19px;
+    background: url(../images/wechat.png) no-repeat;
+    background-size: contain;
+  }
+
+}
+@media (max-width:320px){
+  .app-cam {
+  width: 84%;
+  padding: 0em 1em 1em 1em;
+  margin: 0 auto 0 3%;
+  }
+  .getCode{
+  position: absolute;
+    right: 40px;
+    top: 18px;
+    color: #333333;
+    padding-left: 5px;
+    border-left: 1px #ddd solid;
+    font-size: 12px;
+}
+  body h1 {
+  font-size: 1.5em;
+  }
+  .copy-right p {
+      font-size: 0.8em;
+    line-height: 1.7em;
+  }
+  .app-cam input[type="text"],.app-cam input[type="password"] {
+    width:70%;
+    padding: 1em 1em 1em 1em;
+    font-size: 15px;
+    background-size:9%;
+  }
+  .app-cam input[type="password"] {
+  background-size: 9%;
+  }
+  .new p.sign {
+  font-size: 0.87em;
+  padding-top: 1px;
+}
+ .new p a {
+  font-size: 0.845em;
+}
+ .new p.sign a {
+  font-size: 0.83em;
+}
+  .new {
+    margin:1em 0 1em 0;
+  }
+  .submit {
+  margin: 1em 0 0.5em 0;
+}
+  .app-cam input[type="submit"] {
+    font-size: 18px;
+    padding: 11px 11px;
+    }
+  form {
+  width:100%;
+  margin: 0 auto;
+  }
+  
+  .buttons {
+  margin: 1em 0 1em 0;
+}
+  .buttons ul li {
+    display: block;
+    margin-bottom: 0.5em;
+  }
+}
+
+.pull-right{
+  float: right;
+}
+.margin-right-10{
+  margin-right: .8em;
+}
+.noBor{
+  border:none!important;
+}
+.box-list {
+    margin: .8em;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.box-list .topTitle{
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  border-bottom: 1px #cccccc solid;
+  text-indent: 0.8em;
+}
+
+.box-list .yx-list {
+    padding: 0 .8em;
+}
+
+.yx-list li {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: .9em 0 .8em;
+    min-height: 53px;
+    height: auto;
+    border-bottom: 1px solid #efefef;
+    line-height: 30px;
+}
+
+.yx-list li.ok{
+  color:#666;
+}
+
+.floatRightBtn{
+  width: 120px;
+    position: absolute;
+    top: 115px;
+    right: 30px;
+}
+
+.bottomDate{
+  border-top:1px #ccc dashed;
+  padding: 1em .8em;
+  color:#666;
+  font-size: 1em;
+}
+
+.btn{
+    display: inline-block;
+    background-image: none !important;
+    box-shadow: none !important;
+    cursor: pointer;
+    vertical-align: middle;
+    margin: 0;
+    position: relative;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+      padding: 0px 3px;
+    width: 120px;
+    height: 36px;
+    line-height: 36px;
+  text-align: center;
+}
+.btn-blue{
+  background: #0e6eb8;
+  color:#fff;
+   border:1px #0e6eb8 solid;
+}
+.btn-white{
+  background: #fff;
+  color:#0e6eb8;
+  border:1px #0e6eb8 solid;
+}
+.margin-top-10{
+  margin-top:10px;
+}
+
+/*登录成功*/
+.sucBox{
+
+}
+h2.blue{
+  color: #0e6eb8;
+  font-size: 1.4em;
+  padding-top:10px;
+  font-weight: bold;
+}
+.sucBtn{
+  width: 100%;
+  margin-top: 40px;
+}
+.sucBtn a{
+  width:90%;
+   height: 40px;
+  line-height: 40px;
+}
+.sucBox p{
+  font-size: 16px;
+  line-height: 25px;
+}
+.sucList{
+    position: relative;
+    margin-top: 30px;
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+}
+.h40{
+  height: 40px;
+  line-height: 40px;
+}

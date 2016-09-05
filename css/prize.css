@@ -1,0 +1,110 @@
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+body{
+	font-family: "微软雅黑";
+	font-size: 16px;
+	background: #eef2f5;
+}
+.centerTop{
+    font-family:"微软雅黑";
+    color:#999;
+    width: 100%;
+    height:100px;
+    border-bottom: 1px #ccc solid;
+    background: #fff;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: box;
+}
+.centerTop .flex{
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    -ms-flex: 1;
+    flex : 1;
+    position: relative;
+    text-align: center;
+}
+.centerTop .flex h3{
+    margin-top: 20px;
+    color:#ff6600;
+    font-size: 30px;
+}
+.centerTop .flex p{
+    color:#999;
+}
+.centerTop .flex:first-child:after{
+     width: 0px;
+     border:none;
+}
+.centerTop .flex:after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    height:60px;
+    width: 1px;
+    border-right: 1px #ccc solid;
+}
+.tip-box{
+   border:1px #ddd dashed; 
+   margin:10px;
+   padding: 10px 20px;
+   border-radius: 4px;
+}
+.tip-box ul{
+    color:#666;
+}
+.invite-list{
+    background: #fff;
+}
+
+.invite-list h3{
+    padding: 10px;
+    text-indent: 25px;
+    position: relative;
+}
+.invite-list h3:before{
+    position: absolute;
+    left: 20px;
+    top: 13px;
+    height: 18px;
+    width: 5px;
+    background: #ff6600;
+    content: "";
+}
+table{
+    font-size: 13px;
+    width: 100%;
+}
+table thead th{
+    background: #ccc;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+}
+table thead th:first-child{
+    text-indent: 10px;
+    text-align: left;
+}
+table tbody td{
+    background: #fff;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px #ccc solid;
+}
+table tbody tr:hover td,table tbody tr:active td{
+    background: #eef8ff;
+}
+table tbody tr td:first-child{
+    text-indent: 10px;
+}
+table tbody tr:nth-child(even) td{
+    background: #eef8ff;
+}

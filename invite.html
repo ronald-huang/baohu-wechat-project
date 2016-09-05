@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>邀请好友</title>
+<link href="css/invite.css" rel='stylesheet' type='text/css' />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no, minimal-ui"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no,email=no" name="format-detection"/>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</script>
+<link rel="stylesheet" href="css/jquery-ui.css">
+<!--webfonts-->
+<!--//webfonts-->
+</head>
+<body>
+	<div class="top">
+		每成功邀请一位好友投资，可获得50元抵现卷，上不封
+顶！快来参加吧！
+	</div>	
+
+	<ul class="yx-list">
+		<li class="face-invite">
+		    <label class="check-label flex">
+		        <div class="flexItem">
+		        	<i class="face"></i>面对面邀请
+		        </div>
+		        <div class="color666 flexItem textRight w120"></div>
+		    </label>
+		</li>
+
+		<li>
+		    <label class="check-label flex">
+		        <div class="flexItem"><i class="friend"></i>朋友圈邀请</div>
+		        <div class="color666 flexItem textRight w120"></div>
+		    </label>	
+		</li>
+	</ul>
+	<div class="overlay hidden"></div>
+	<div id="dialog-alert" class="dialog-box hidden">
+	  	<div class="dialog-title">
+	  		<span class="close"></span>
+	  	</div>
+	  	<div class="dialog-content">
+	  		<h3 class="orange">首次投保送50元现金红包</h3>
+	  		<p>保乎，让年轻人买保险不再疑惑。透明、实惠，投保还送红包哦！</p>
+	  		<img src="images/qrcode.png" alt="">
+	  		<div>扫一扫注册</div>
+	  	</div>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script>
+		$(function() {
+		    $( ".face-invite" ).click(function() {
+		      	$('.overlay').removeClass('hidden');
+		      	$('#dialog-alert').removeClass('hidden');
+		    });
+		    $( ".close" ).click(function() {
+		      	$('.overlay').addClass('hidden');
+		      	$('#dialog-alert').addClass('hidden');
+		    });
+		});
+	</script>
+</body>
+</html>

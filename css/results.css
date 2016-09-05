@@ -1,0 +1,162 @@
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+body{
+	font-family: "微软雅黑";
+	font-size: 16px;
+	background: #eef2f5;
+}
+h3.title{
+    text-align: center;
+    font-size: 24px;
+    color:#0e6eb8;
+    margin: 30px 0px 0px;
+    font-weight: bold;
+}
+.advice{
+    margin: 20px;
+    font-size: 18px;
+}
+.advice .line{
+    color:#0e6eb8;
+    font-size: 16px;
+}
+.advice .content{
+    font-weight: normal;
+    margin-top:10px;
+    color:#666;
+    font-size: 14px;
+}
+.advice .content ul{
+    margin: 30px 0px 0px 0px;
+}
+.advice .content ul li{
+    font-size: 14px;
+    width: 100%;
+    display: -moz-box;
+    display: -ms-flex-box;
+    display: -webkit-box;
+    display: box;
+    margin-bottom: 20px;
+}
+.advice .content ul li .strong{
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    -ms-flex: 1;
+    flex : 1;
+    position: relative;
+        margin-left: 5px;
+}
+.advice .content ul li .strong:after{
+    content: "强烈建议";
+    position: relative;
+    right: 0px;
+    top:-8px;
+}
+.advice .content ul li .last:after{
+    content: "建议"!important;
+}
+.advice .content ul li .red span{
+    background: #eb6877!important;
+}
+.advice .content ul li .red:after{
+    color:#eb6877!important;
+}
+.advice .content ul li .des{
+    width: 60px!important;
+    text-align: right;
+    color:#666;
+}
+.advice .content ul li span{
+    display: inline-block;
+    height: 25px;
+    background: #88abda;
+}
+.btnBox{
+    margin: 20px;
+}
+.btnBox .btn{
+    width: 40%;
+    margin: 0px 4%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 20px;
+    box-sizing:border-box;
+
+}
+.btnBox .btn-blue{
+    background: #0068b7;
+    color:#fff;
+}
+.btnBox .btn-yellow{
+    background: #fff45c;
+    color:#0068b7;
+}
+#main1{
+    width: 40%;
+    float: left;
+    margin:30px;
+}
+#main2{
+     width: 40%;
+    float: right;
+        margin:30px;
+}
+.describe{
+    margin:20px;
+}
+.describe ul li{
+    width: 32%;
+    display: inline-block;
+    text-align: center;
+    color:#666;
+}
+.describe ul .orange:before{
+    width: 10px;
+    height: 10px;
+    background: orange;
+    position: relative;
+    left: 0px;
+    top: -1px;
+    margin-right: 5px;
+    content: "";
+    display: inline-block;
+}
+.describe ul .blue:before{
+    width: 10px;
+    height: 10px;
+    background: #7ecef4;
+    position: relative;
+    left: 0px;
+    top: -1px;
+    margin-right: 5px;
+    content: "";
+    display: inline-block;
+}
+.describe ul .red:before{
+    width: 10px;
+    height: 10px;
+    background: #ed8cee;
+    position: relative;
+    left: 0px;
+    top: -1px;
+    margin-right: 5px;
+    content: "";
+    display: inline-block;
+}
+
+@media(min-width: 320px) and (max-width: 480px){
+    #main1,#main2{
+        width:80%;
+        margin:0 10%;
+    }
+    
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>保费预测</title>
+<link href="css/predict.css" rel='stylesheet' type='text/css' />
+<link href="css/vendor/jquery.range.css" rel='stylesheet' type='text/css' />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no, minimal-ui"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no,email=no" name="format-detection"/>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</script>
+</head>
+<body>
+	<div class="content">
+		<div class="item1 item">
+			<h3>产品选择</h3>
+			<ul>
+				<li class="active">癌症保障</li>
+				<li>6种重症保障</li>
+				<li>25种重症保障</li>
+				<li>42种重症保障</li>
+			</ul>
+		</div>
+		<div class="item2 item">
+			<h3>被保人性别</h3>
+			<ul>
+				<li class="active">男</li>
+				<li>女</li>
+			</ul>
+		</div>
+		<div class="item3 item">
+			<h3>出生日期</h3>
+			<select name="" class="select-list">
+				<option value=""></option>
+				<option value=""></option>
+				<option value=""></option>
+			</select>
+		</div>
+		<div class="item4 item">
+			<h3>基本保额</h3>
+			<div class="inner">
+				<span>0万</span>
+				<div>
+					<input type="hidden" class="slider-input" value="0" />					
+				</div>
+				<span>25万</span>
+			</div>
+			
+		</div>
+		<div class="item5 item">
+			<h3>保险期间</h3>
+			<ul>
+				<li style="width:150px;" class="active">到100周岁</li>
+				<li style="width:140px;" >到70周岁（推荐）</li>
+			</ul>
+			<ul style="margin-top:10px;">
+				<li>30年(标准)</li>
+				<li>25年</li>
+				<li>20年</li>
+				<li>10年</li>
+			</ul>
+		</div>
+		<div class="item6 item">
+			<h3>缴费方式</h3>
+			<ul>
+				<li class="active">年交</li>
+				<li>月交</li>
+			</ul>
+			<p>年保费1000元以上可选择月交</p>
+		</div>
+		<div class="item7 item">
+			<div class="grey innerItem">所需总保费<span class="pull-right orange">￥1888.00</span></div>
+			<div class="innerdiv">
+				<div>
+					<div>保障成本总计<span>￥1888.00</span></div>
+				</div>
+				<div>
+					<div>身故保障成本<span>￥3776.00</span></div>
+				</div>
+				<div>
+					<div>重疾保障成本<span>￥3776.00</span></div>
+				</div>
+			</div>
+		</div>
+		<div class="downbox">
+			<h3>
+				模拟计算数据支持如下，点击可下载
+			</h3>
+			<a href="javascript:void(0);">《本产品精算报告》</a>
+			<a href="javascript:void(0);">《本产品保障成本精算结果》及《精算缴费因子》</a>
+		</div>
+		
+	</div>
+
+	<div class="overlay"></div>
+	<div class="loadingBox">
+		<h3>即将前往</h3>
+		<p>即将前往阳光保险官方购买页面…</p>
+	</div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.range.js"></script>
+<script>
+	$(function(){
+		var width = $('body').width();
+		$('.slider-input').jRange({ 
+		    from: 0, 
+		    to: 25, 
+		    step: 1, 
+		    scale: [0,5,10,15,20,25], 
+		    format: '%s万', 
+		    width: width-130,
+		    showLabels: true, 
+		    showScale: true 
+		}); 
+	})
+</script>
+</html>

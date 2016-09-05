@@ -1,0 +1,152 @@
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+body{
+	font-family: "微软雅黑";
+	font-size: 16px;
+	background: #eef2f5;
+}
+.top{
+	background: #448aca;
+	padding: 1em;
+	color:#fff;
+	font-size: 1em;
+}
+
+.yx-list {
+    background-color: #fff;
+    padding: 0;
+    position: relative;
+    margin-top: 20px;
+}
+.yx-list:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -1px;
+    height: 1px;
+    background-color: #ccc;
+    -webkit-transform: scaleY(.5);
+    -ms-transform: scaleY(.5);
+    transform: scaleY(.5);
+    overflow: hidden;
+}
+
+.yx-list li {
+    vertical-align: middle;
+    min-height: 50px;
+    height: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 1em 15px;
+    position: relative;
+    border-bottom: 1px #ccc solid;
+    cursor: pointer;
+}
+
+.flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.flexItem {
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.textRight {
+    text-align: right;
+}
+.w120 {
+    width: 130px;
+}
+
+.flexItem i{
+	display: inline-block;
+    width: 20px;
+    height: 17px;
+	background: url(../images/invite-icon.png) no-repeat;
+	background-size:cover;
+	margin-right: 10px;
+}
+
+.flexItem i.face{
+	position: relative;
+	top: 5px;
+	background-position: 0px 0px;
+}
+
+.flexItem i.friend{
+	background-position: 0px -27px;
+    height: 19px;
+    position: relative;
+    top: 4px;
+}
+.hidden{
+    display: none;
+}
+.overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #555;
+    z-index: 100;
+    -moz-opacity: 0.2;
+    opacity: 0.2;
+}
+.dialog-box{
+     z-index: 101;
+    width: 300px;
+    background: #fff;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    margin-left: -150px;
+}
+.dialog-box .dialog-title{
+    height: 30px;
+}
+.dialog-box .dialog-title .close{
+    cursor: pointer;
+    width: 23px;
+    height: 23px;
+    display: inline-block;
+    float: right;
+    position: relative;
+    right: 5px;
+    top: 5px;
+    background: url(../images/center-icon.png) -1px -250px;
+}
+.dialog-box .dialog-content{
+    padding: 10px 20px 30px;
+    text-align: center;
+}
+.dialog-box .dialog-content .orange{
+    color:#f6641c;
+}
+.dialog-box .dialog-content h3{
+    font-size: 20px;
+}
+.dialog-box .dialog-content p{
+    font-size: 16px;
+    color:#666;
+    margin-top: 15px;
+}
+.dialog-box .dialog-content img{
+    width: 80%;
+    margin: 10px auto;
+}

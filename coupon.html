@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>邀请好友</title>
+<link href="css/coupon.css" rel='stylesheet' type='text/css' />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no, minimal-ui"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no,email=no" name="format-detection"/>
+</head>
+<body>
+	<div class="centerTop">
+		<div class="flex active">
+			可用
+		</div>
+		<div class="flex">
+			未生效
+		</div>
+		<div class="flex">
+			已用
+		</div>
+		<div class="flex">
+			已过期
+		</div>
+	</div>
+	<div class="coupon-list">
+		<ul>
+			<li>
+				<div class="top">
+					<h3>￥50</h3>
+					<div class="des">
+						首次投保奖励50元红包
+					</div>
+					<a href="javascriptL:void(0);" class="btn">
+						点击提现
+					</a>
+				</div>
+				<div class="bottom">
+					过期时间：2016-09-31
+				</div>
+			</li>
+			<li>
+				<div class="top">
+					<h3>￥50</h3>
+					<div class="des">
+						首次投保奖励50元红包
+					</div>
+					<a href="javascriptL:void(0);" class="btn">
+						点击提现
+					</a>
+				</div>
+				<div class="bottom">
+					过期时间：2016-09-31
+				</div>
+			</li>
+			<li>
+				<div class="top">
+					<h3>￥50</h3>
+					<div class="des">
+						首次投保奖励50元红包
+					</div>
+					<a href="javascriptL:void(0);" class="btn">
+						点击提现
+					</a>
+				</div>
+				<div class="bottom">
+					过期时间：2016-09-31
+				</div>
+			</li>
+			<li>
+				<div class="top">
+					<h3>￥50</h3>
+					<div class="des">
+						首次投保奖励50元红包
+					</div>
+					<a href="javascriptL:void(0);" class="btn">
+						点击提现
+					</a>
+				</div>
+				<div class="bottom">
+					过期时间：2016-09-31
+				</div>
+			</li>
+		</ul>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script>
+		$(function() {
+		    $('.flex').on('click',function(){
+		    	$(this).siblings('.active').removeClass('active');
+		    	$(this).addClass('active');
+		    });
+		});
+	</script>
+</body>
+</html>
