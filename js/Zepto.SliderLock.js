@@ -22,7 +22,7 @@
             containerWidth = option.containerWidth,
             barWidth = option.barWidth,
             barMargin = option.barMargin,
-            html = '<div class="zepto-sliderlock"><span class="zepto-sliderTips">左滑查看保障疾病一览表</span><div class="zepto-sliderlock-bar"></div></div>';
+            html = '<div class="zepto-sliderlock"><span class="zepto-sliderTips"></span><div class="zepto-sliderlock-bar"></div></div>';
 
         holder.html(html).children('.zepto-sliderlock').css({
             'width': (containerWidth || 0) + 'px',

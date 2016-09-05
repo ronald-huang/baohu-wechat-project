@@ -5,6 +5,10 @@ ol,ul{list-style:none;margin:0px;padding:0px;}
 blockquote,q{quotes:none;}
 blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
 table{border-collapse:collapse;border-spacing:0;}
+input[type="button"], input[type="submit"], input[type="reset"] {
+  -webkit-appearance: none;
+}
+textarea {-webkit-appearance: none;}   
 body{
 	font-family: "微软雅黑";
 	font-size: 16px;

@@ -20,6 +20,11 @@ a{text-decoration:none;}
 .vertical-top{	vertical-align:top;}/* vertical align top */
 nav.vertical ul li{	display:block;}/* vertical menu */
 nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+input[type="button"], input[type="submit"], input[type="reset"] {
+  -webkit-appearance: none;
+}
+textarea {-webkit-appearance: none;}   
+
 img{max-width:100%;}
 /*end reset*/
 /****-----start-body----****/
