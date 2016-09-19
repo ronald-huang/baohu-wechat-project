@@ -27,8 +27,8 @@ body{
     background: #fff;
 }
 .backToSection{
-    position: absolute;
-    top: 50%;
+    position: fixed;
+        margin-top: 60%;
     left: 0px;
     width: 20px;
     border: 1px #ddd solid;

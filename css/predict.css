@@ -114,6 +114,20 @@ body{
     display: block;
     line-height: 30px;
     text-decoration: none;
+    text-align: left;
+}
+.downbox .btn{
+    width: 38%;
+    margin: 20px auto;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 6px;
+        background: #005edd;
 }
 .item7{
     padding-bottom: 0px;
